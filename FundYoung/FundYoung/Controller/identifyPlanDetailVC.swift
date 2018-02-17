@@ -16,16 +16,16 @@ class identifyPlanDetailVC: UIViewController, UIPickerViewDelegate, UIPickerView
     @IBOutlet weak var SelectNumOfYear: UIButton!
     @IBOutlet weak var nextBtn: UIButton!
     @IBOutlet weak var nameInput: UITextField!
-    @IBOutlet weak var targetInput: UITextField!
-    
+  
+    var isNameTyped = false
+    var isTargetTyped = false
+    var isNumYearSelected = false
+  
     @IBAction func nameTyped(_ sender: Any) {
         plan.PlanName = nameInput.text
         nameInput.text = plan.PlanName
-    }
-    
-    @IBAction func targetTyped(_ sender: Any) {
-        plan.Target = targetInput.text
-        targetInput.text = plan.Target
+        isNameTyped = true
+        
     }
     
     
@@ -43,11 +43,10 @@ class identifyPlanDetailVC: UIViewController, UIPickerViewDelegate, UIPickerView
         SelectNumOfYear.setTitle(String(duration[row]), for: .normal)
         pickerNumberOfYear.isHidden = true
         plan.NumberOfYear = duration[row]
+        isNumYearSelected = true
+        
     }
-    
 
- 
-    
     override func viewDidLoad() {
        
         pickerNumberOfYear.isHidden = true
@@ -67,6 +66,11 @@ class identifyPlanDetailVC: UIViewController, UIPickerViewDelegate, UIPickerView
             
              pickerNumberOfYear.isHidden = false}
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let fundRecommendation = segue.destination as? fundRecommendationVC{
+            fundRecommendation.plan = plan
+            
+        }
+    }
    
 }

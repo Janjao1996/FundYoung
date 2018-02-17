@@ -9,9 +9,13 @@
 import UIKit
 
 class fundRecommendationVC: UIViewController {
+    var plan:Plan!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(plan.PlanName)
+        print(plan.Target)
+        print(plan.NumberOfYear)
 
         // Do any additional setup after loading the view.
     }
