@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		A562799A203854E9000DF151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5627999203854E9000DF151 /* AppDelegate.swift */; };
-		A562799C203854E9000DF151 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A562799B203854E9000DF151 /* ViewController.swift */; };
+		A562799C203854E9000DF151 /* welcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A562799B203854E9000DF151 /* welcomeVC.swift */; };
 		A562799F203854E9000DF151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A562799D203854E9000DF151 /* Main.storyboard */; };
 		A56279A1203854E9000DF151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56279A0203854E9000DF151 /* Assets.xcassets */; };
 		A56279A4203854E9000DF151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56279A2203854E9000DF151 /* LaunchScreen.storyboard */; };
+		A56279AE20386772000DF151 /* myPlansVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56279AD20386772000DF151 /* myPlansVC.swift */; };
+		A56279B0203867B4000DF151 /* identifyPlanDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56279AF203867B4000DF151 /* identifyPlanDetailVC.swift */; };
+		A56279B2203867E6000DF151 /* fundRecommendationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56279B1203867E6000DF151 /* fundRecommendationVC.swift */; };
+		A56279B420386810000DF151 /* customPlanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56279B320386810000DF151 /* customPlanVC.swift */; };
+		A56279B62038682E000DF151 /* fundSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56279B52038682E000DF151 /* fundSelectionVC.swift */; };
+		A56279B82038685A000DF151 /* estimateSaving.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56279B72038685A000DF151 /* estimateSaving.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A5627996203854E9000DF151 /* FundYoung.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FundYoung.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5627999203854E9000DF151 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A562799B203854E9000DF151 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A562799B203854E9000DF151 /* welcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomeVC.swift; sourceTree = "<group>"; };
 		A562799E203854E9000DF151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A56279A0203854E9000DF151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A56279A3203854E9000DF151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A56279A5203854E9000DF151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A56279AD20386772000DF151 /* myPlansVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myPlansVC.swift; sourceTree = "<group>"; };
+		A56279AF203867B4000DF151 /* identifyPlanDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = identifyPlanDetailVC.swift; sourceTree = "<group>"; };
+		A56279B1203867E6000DF151 /* fundRecommendationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fundRecommendationVC.swift; sourceTree = "<group>"; };
+		A56279B320386810000DF151 /* customPlanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customPlanVC.swift; sourceTree = "<group>"; };
+		A56279B52038682E000DF151 /* fundSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fundSelectionVC.swift; sourceTree = "<group>"; };
+		A56279B72038685A000DF151 /* estimateSaving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = estimateSaving.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,36 @@
 		A5627998203854E9000DF151 /* FundYoung */ = {
 			isa = PBXGroup;
 			children = (
+				A56279AC20386719000DF151 /* Controller */,
+				A56279AB20386709000DF151 /* Model */,
 				A5627999203854E9000DF151 /* AppDelegate.swift */,
-				A562799B203854E9000DF151 /* ViewController.swift */,
 				A562799D203854E9000DF151 /* Main.storyboard */,
 				A56279A0203854E9000DF151 /* Assets.xcassets */,
 				A56279A2203854E9000DF151 /* LaunchScreen.storyboard */,
 				A56279A5203854E9000DF151 /* Info.plist */,
 			);
 			path = FundYoung;
+			sourceTree = "<group>";
+		};
+		A56279AB20386709000DF151 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A56279AC20386719000DF151 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A562799B203854E9000DF151 /* welcomeVC.swift */,
+				A56279AD20386772000DF151 /* myPlansVC.swift */,
+				A56279AF203867B4000DF151 /* identifyPlanDetailVC.swift */,
+				A56279B1203867E6000DF151 /* fundRecommendationVC.swift */,
+				A56279B320386810000DF151 /* customPlanVC.swift */,
+				A56279B52038682E000DF151 /* fundSelectionVC.swift */,
+				A56279B72038685A000DF151 /* estimateSaving.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +170,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A562799C203854E9000DF151 /* ViewController.swift in Sources */,
+				A56279B0203867B4000DF151 /* identifyPlanDetailVC.swift in Sources */,
+				A562799C203854E9000DF151 /* welcomeVC.swift in Sources */,
+				A56279B420386810000DF151 /* customPlanVC.swift in Sources */,
+				A56279B82038685A000DF151 /* estimateSaving.swift in Sources */,
 				A562799A203854E9000DF151 /* AppDelegate.swift in Sources */,
+				A56279B2203867E6000DF151 /* fundRecommendationVC.swift in Sources */,
+				A56279B62038682E000DF151 /* fundSelectionVC.swift in Sources */,
+				A56279AE20386772000DF151 /* myPlansVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
