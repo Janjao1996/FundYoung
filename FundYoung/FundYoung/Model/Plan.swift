@@ -7,3 +7,7 @@
 //
 
 import Foundation
+struct Plan {
+    var PlanName:String?
+    
+}

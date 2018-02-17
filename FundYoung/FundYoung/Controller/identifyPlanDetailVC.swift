@@ -15,7 +15,8 @@ class identifyPlanDetailVC: UIViewController, UIPickerViewDelegate, UIPickerView
     
     @IBOutlet weak var SelectNumOfYear: UIButton!
     
-   
+    
+    
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -42,6 +43,9 @@ class identifyPlanDetailVC: UIViewController, UIPickerViewDelegate, UIPickerView
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    @IBAction func nextBtnPressed(_ sender: Any) {
+        performSegue(withIdentifier: "identifyPlanVC", sender: self)
     }
 
     @IBAction func selectBtnPressed(_ sender: UIButton) {

@@ -208,9 +208,12 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HL5-PM-HmA">
-                                <rect key="frame" x="100" y="591" width="175" height="30"/>
+                                <rect key="frame" x="103" y="587" width="175" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextBtnPressed:" destination="gOE-1w-oP5" eventType="touchUpInside" id="fxG-T5-t5R"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -219,6 +222,7 @@
                     <connections>
                         <outlet property="SelectNumOfYear" destination="eJc-6g-Htq" id="SV4-33-ouV"/>
                         <outlet property="pickerNumberOfYear" destination="gjT-cT-YHA" id="iHR-35-ijN"/>
+                        <segue destination="G2w-5g-VoH" kind="show" identifier="identifyPlanVC" id="BHf-Mp-40Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t3S-nr-j1p" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -314,7 +318,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lRn-mp-PMN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2165.5999999999999" y="107.49625187406298"/>
+            <point key="canvasLocation" x="2282" y="107"/>
         </scene>
         <!--Custom PlanVC-->
         <scene sceneID="v3L-iP-bgy">
