@@ -18,6 +18,9 @@
 		A56279B420386810000DF151 /* customPlanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56279B320386810000DF151 /* customPlanVC.swift */; };
 		A56279B62038682E000DF151 /* fundSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56279B52038682E000DF151 /* fundSelectionVC.swift */; };
 		A56279B82038685A000DF151 /* estimateSaving.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56279B72038685A000DF151 /* estimateSaving.swift */; };
+		A56279BA20386B21000DF151 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56279B920386B21000DF151 /* User.swift */; };
+		A56279BC20386B30000DF151 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56279BB20386B30000DF151 /* Plan.swift */; };
+		A56279BE20386B3F000DF151 /* Fund.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56279BD20386B3F000DF151 /* Fund.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		A56279B320386810000DF151 /* customPlanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customPlanVC.swift; sourceTree = "<group>"; };
 		A56279B52038682E000DF151 /* fundSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fundSelectionVC.swift; sourceTree = "<group>"; };
 		A56279B72038685A000DF151 /* estimateSaving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = estimateSaving.swift; sourceTree = "<group>"; };
+		A56279B920386B21000DF151 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A56279BB20386B30000DF151 /* Plan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
+		A56279BD20386B3F000DF151 /* Fund.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fund.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,9 @@
 		A56279AB20386709000DF151 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A56279B920386B21000DF151 /* User.swift */,
+				A56279BB20386B30000DF151 /* Plan.swift */,
+				A56279BD20386B3F000DF151 /* Fund.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,9 +183,12 @@
 				A562799C203854E9000DF151 /* welcomeVC.swift in Sources */,
 				A56279B420386810000DF151 /* customPlanVC.swift in Sources */,
 				A56279B82038685A000DF151 /* estimateSaving.swift in Sources */,
+				A56279BC20386B30000DF151 /* Plan.swift in Sources */,
 				A562799A203854E9000DF151 /* AppDelegate.swift in Sources */,
+				A56279BA20386B21000DF151 /* User.swift in Sources */,
 				A56279B2203867E6000DF151 /* fundRecommendationVC.swift in Sources */,
 				A56279B62038682E000DF151 /* fundSelectionVC.swift in Sources */,
+				A56279BE20386B3F000DF151 /* Fund.swift in Sources */,
 				A56279AE20386772000DF151 /* myPlansVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
