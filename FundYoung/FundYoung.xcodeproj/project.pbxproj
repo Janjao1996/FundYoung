@@ -72,6 +72,7 @@
 		A5627998203854E9000DF151 /* FundYoung */ = {
 			isa = PBXGroup;
 			children = (
+				A56279BF20386BAF000DF151 /* View */,
 				A56279AC20386719000DF151 /* Controller */,
 				A56279AB20386709000DF151 /* Model */,
 				A5627999203854E9000DF151 /* AppDelegate.swift */,
@@ -105,6 +106,13 @@
 				A56279B72038685A000DF151 /* estimateSaving.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		A56279BF20386BAF000DF151 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

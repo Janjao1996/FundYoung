@@ -43,6 +43,9 @@
                                 <rect key="frame" x="158" y="467" width="59" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign In"/>
+                                <connections>
+                                    <segue destination="MWL-6R-yqq" kind="show" id="eyD-OK-ZFF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvp-dd-CbF">
                                 <rect key="frame" x="158" y="525" width="59" height="30"/>
@@ -129,6 +132,9 @@
                                 <rect key="frame" x="145" y="606" width="84" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="New Plan"/>
+                                <connections>
+                                    <segue destination="gOE-1w-oP5" kind="show" id="69R-JH-RTF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -193,6 +199,9 @@
                                 <rect key="frame" x="166" y="215" width="175" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Select Number of years"/>
+                                <connections>
+                                    <action selector="selectBtnPressed:" destination="gOE-1w-oP5" eventType="touchUpInside" id="frP-6T-8Ak"/>
+                                </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gjT-cT-YHA">
                                 <rect key="frame" x="0.0" y="269" width="375" height="162"/>
@@ -207,6 +216,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="k1H-ou-2tY"/>
                     </view>
+                    <connections>
+                        <outlet property="SelectNumOfYear" destination="eJc-6g-Htq" id="SV4-33-ouV"/>
+                        <outlet property="pickerNumberOfYear" destination="gjT-cT-YHA" id="iHR-35-ijN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t3S-nr-j1p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
