@@ -16,16 +16,25 @@ class identifyPlanDetailVC: UIViewController, UIPickerViewDelegate, UIPickerView
     @IBOutlet weak var SelectNumOfYear: UIButton!
     @IBOutlet weak var nextBtn: UIButton!
     @IBOutlet weak var nameInput: UITextField!
-  
+
+    @IBOutlet weak var targetInput: UITextField!
+    
     var isNameTyped = false
     var isTargetTyped = false
     var isNumYearSelected = false
+    
+   
   
     @IBAction func nameTyped(_ sender: Any) {
         plan.PlanName = nameInput.text
         nameInput.text = plan.PlanName
         isNameTyped = true
-        
+    }
+    
+    @IBAction func targetTyped(_ sender: Any) {
+        plan.Target = Int(targetInput.text!)
+        targetInput.text = String(plan.Target)
+        isTargetTyped = true
     }
     
     

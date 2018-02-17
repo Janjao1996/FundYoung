@@ -9,7 +9,7 @@
 import Foundation
 struct Plan {
     var PlanName: String!
-    var Target: Int?
+    var Target: Int!
     var NumberOfYear: Int!
     
 }

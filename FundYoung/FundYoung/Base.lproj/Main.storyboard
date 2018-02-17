@@ -167,13 +167,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Target" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcE-J3-rwR">
-                                <rect key="frame" x="57" y="174" width="85" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qo-3F-6Ee">
                                 <rect key="frame" x="57" y="219" width="85" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -191,14 +184,6 @@
                                     <action selector="nameTyped:" destination="gOE-1w-oP5" eventType="editingDidEnd" id="b5R-CK-bcq"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJc-6g-Htq">
-                                <rect key="frame" x="166" y="215" width="175" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Select Number of years"/>
-                                <connections>
-                                    <action selector="selectBtnPressed:" destination="gOE-1w-oP5" eventType="touchUpInside" id="frP-6T-8Ak"/>
-                                </connections>
-                            </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gjT-cT-YHA">
                                 <rect key="frame" x="0.0" y="269" width="375" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -211,14 +196,30 @@
                                     <action selector="nextBtnPressed:" destination="gOE-1w-oP5" eventType="touchUpInside" id="fxG-T5-t5R"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gf3-I9-ubv">
-                                <rect key="frame" x="166" y="174" width="175" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJc-6g-Htq">
+                                <rect key="frame" x="166" y="214" width="175" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Select Number of years"/>
+                                <connections>
+                                    <action selector="selectBtnPressed:" destination="gOE-1w-oP5" eventType="touchUpInside" id="frP-6T-8Ak"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Target" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OgQ-4K-mD3" userLabel="Target">
+                                <rect key="frame" x="57" y="173" width="85" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iJA-tN-8BE">
+                                <rect key="frame" x="166" y="173" width="175" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="nameTyped:" destination="gOE-1w-oP5" eventType="editingDidEnd" id="25a-xF-lE3"/>
+                                    <action selector="targetTyped:" destination="gOE-1w-oP5" eventType="editingChanged" id="9IX-23-z47"/>
+                                    <action selector="targetTyped:" destination="gOE-1w-oP5" eventType="editingDidEnd" id="MZp-b1-uT6"/>
                                 </connections>
                             </textField>
                         </subviews>
@@ -230,6 +231,7 @@
                         <outlet property="nameInput" destination="AfM-hq-CFo" id="30J-zc-YtR"/>
                         <outlet property="nextBtn" destination="HL5-PM-HmA" id="UCd-mE-yHC"/>
                         <outlet property="pickerNumberOfYear" destination="gjT-cT-YHA" id="iHR-35-ijN"/>
+                        <outlet property="targetInput" destination="iJA-tN-8BE" id="CYA-Z1-0fg"/>
                         <segue destination="G2w-5g-VoH" kind="show" identifier="identifyPlanVC" id="BHf-Mp-40Z"/>
                     </connections>
                 </viewController>
