@@ -8,6 +8,8 @@
 
 import Foundation
 struct Plan {
-    var PlanName:String?
+    var PlanName: String?
+    var Target: String?
+    var NumberOfYear: Int?
     
 }
