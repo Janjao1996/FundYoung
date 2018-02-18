@@ -11,9 +11,9 @@ import Foundation
 class  FundDataService {
     static let instance = FundDataService()
     private let Funds = [
-        Fund(FundName: "F1", Risk: 5, Return: 5),
-        Fund(FundName: "F2", Risk: 4, Return: 4),
-        Fund(FundName: "F3", Risk: 6, Return: 7)
+        Fund(FundName: "SCBSET50", Risk: 5, Return: 5),
+        Fund(FundName: "SCBFP", Risk: 4, Return: 4),
+        Fund(FundName: "SCBTMFPLUS-P", Risk: 6, Return: 7)
     ]
     
     func getFunds() -> [Fund]{
