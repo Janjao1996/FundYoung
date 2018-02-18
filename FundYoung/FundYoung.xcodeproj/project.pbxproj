@@ -21,6 +21,8 @@
 		A56279BA20386B21000DF151 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56279B920386B21000DF151 /* User.swift */; };
 		A56279BC20386B30000DF151 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56279BB20386B30000DF151 /* Plan.swift */; };
 		A56279BE20386B3F000DF151 /* Fund.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56279BD20386B3F000DF151 /* Fund.swift */; };
+		A5DEDBDF2039564100153CB3 /* FundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DEDBDE2039564100153CB3 /* FundCell.swift */; };
+		A5DEDBE220395AEF00153CB3 /* FundDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DEDBE120395AEF00153CB3 /* FundDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		A56279B920386B21000DF151 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A56279BB20386B30000DF151 /* Plan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
 		A56279BD20386B3F000DF151 /* Fund.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fund.swift; sourceTree = "<group>"; };
+		A5DEDBDE2039564100153CB3 /* FundCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundCell.swift; sourceTree = "<group>"; };
+		A5DEDBE120395AEF00153CB3 /* FundDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 		A5627998203854E9000DF151 /* FundYoung */ = {
 			isa = PBXGroup;
 			children = (
+				A5DEDBE020395ABE00153CB3 /*  Services */,
 				A56279BF20386BAF000DF151 /* View */,
 				A56279AC20386719000DF151 /* Controller */,
 				A56279AB20386709000DF151 /* Model */,
@@ -111,8 +116,17 @@
 		A56279BF20386BAF000DF151 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A5DEDBDE2039564100153CB3 /* FundCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A5DEDBE020395ABE00153CB3 /*  Services */ = {
+			isa = PBXGroup;
+			children = (
+				A5DEDBE120395AEF00153CB3 /* FundDataService.swift */,
+			);
+			path = " Services";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +211,8 @@
 				A56279B2203867E6000DF151 /* fundRecommendationVC.swift in Sources */,
 				A56279B62038682E000DF151 /* fundSelectionVC.swift in Sources */,
 				A56279BE20386B3F000DF151 /* Fund.swift in Sources */,
+				A5DEDBDF2039564100153CB3 /* FundCell.swift in Sources */,
+				A5DEDBE220395AEF00153CB3 /* FundDataService.swift in Sources */,
 				A56279AE20386772000DF151 /* myPlansVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

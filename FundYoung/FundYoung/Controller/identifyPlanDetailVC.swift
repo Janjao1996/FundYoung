@@ -12,11 +12,9 @@ class identifyPlanDetailVC: UIViewController, UIPickerViewDelegate, UIPickerView
     var plan: Plan!
     let duration = [Int](1...50)
     @IBOutlet weak var pickerNumberOfYear: UIPickerView!
-    
     @IBOutlet weak var SelectNumOfYear: UIButton!
     @IBOutlet weak var nextBtn: UIButton!
     @IBOutlet weak var nameInput: UITextField!
-
     @IBOutlet weak var targetInput: UITextField!
     
     var isNameTyped = false
@@ -55,6 +53,11 @@ class identifyPlanDetailVC: UIViewController, UIPickerViewDelegate, UIPickerView
         isNumYearSelected = true
         
     }
+    @IBAction func selectBtnPressed(_ sender: UIButton) {
+        if pickerNumberOfYear.isHidden{
+            
+            pickerNumberOfYear.isHidden = false}
+    }
 
     override func viewDidLoad() {
        
@@ -70,16 +73,17 @@ class identifyPlanDetailVC: UIViewController, UIPickerViewDelegate, UIPickerView
         performSegue(withIdentifier: "identifyPlanVC", sender: self)
     }
 
-    @IBAction func selectBtnPressed(_ sender: UIButton) {
-        if pickerNumberOfYear.isHidden{
-            
-             pickerNumberOfYear.isHidden = false}
-    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let fundRecommendation = segue.destination as? fundRecommendationVC{
             fundRecommendation.plan = plan
             
         }
+    }
+    @IBAction func unwindFromRecommendationVC(unwindSegue: UIStoryboard){
+        
+        
+        
     }
    
 }

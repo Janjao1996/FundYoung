@@ -9,19 +9,23 @@
 import UIKit
 
 class customPlanVC: UIViewController {
+    var plan:Plan!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        planName.text = plan.PlanName
+        Target.text = String(plan.Target)
+        Duration.text = String(plan.NumberOfYear)
+        
 
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    @IBOutlet weak var planName: UITextField!
+    @IBOutlet weak var Target: UITextField!
+    @IBOutlet weak var Duration: UITextField!
     
-
+  
     /*
     // MARK: - Navigation
 

@@ -11,5 +11,6 @@ struct Plan {
     var PlanName: String!
     var Target: Int!
     var NumberOfYear: Int!
+    var FundList = [Fund]()
     
 }

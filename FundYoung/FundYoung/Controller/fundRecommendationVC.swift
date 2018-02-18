@@ -12,19 +12,30 @@ class fundRecommendationVC: UIViewController {
     var plan:Plan!
 
     override func viewDidLoad() {
+        planName.text = plan.PlanName
+        target.text = String(plan.Target)
+        Duration.text = String(plan.NumberOfYear)
+        
         super.viewDidLoad()
-        print(plan.PlanName)
-        print(plan.Target)
-        print(plan.NumberOfYear)
-
+        
         // Do any additional setup after loading the view.
     }
-
+    @IBOutlet weak var planName: UITextField!
+    @IBOutlet weak var target: UITextField!
+    @IBOutlet weak var Duration: UITextField!
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    @IBAction func customBtnPressed(_ sender: Any) {
+        performSegue(withIdentifier: "CustomVC", sender: self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let customVC = segue.destination as? customPlanVC{
+            customVC.plan = plan
+        }
+    }
 
     /*
     // MARK: - Navigation
