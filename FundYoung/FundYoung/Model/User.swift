@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+struct  User {
+    private(set) public var FirstName: String
+    private(set) public var LastName: String
+    /*private(set) public var Email: Email
+    private(set) public var Password: Password
+    private(set) public var DOB: DOB*/
+ 
+    
+    init( FistName: String, LastName: String) {
+        self.FirstName = FistName
+        self.LastName = LastName
+       
+    }
+}
