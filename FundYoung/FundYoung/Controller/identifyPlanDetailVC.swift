@@ -10,6 +10,7 @@ import UIKit
 
 class identifyPlanDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     var plan: Plan!
+    
     let duration = [Int](1...50)
     @IBOutlet weak var pickerNumberOfYear: UIPickerView!
     @IBOutlet weak var SelectNumOfYear: UIButton!
@@ -28,6 +29,7 @@ class identifyPlanDetailVC: UIViewController, UIPickerViewDelegate, UIPickerView
         nameInput.text = plan.PlanName
         isNameTyped = true
     }
+   
     
     @IBAction func targetTyped(_ sender: Any) {
         plan.Target = Int(targetInput.text!)
@@ -80,10 +82,7 @@ class identifyPlanDetailVC: UIViewController, UIPickerViewDelegate, UIPickerView
             
         }
     }
-    @IBAction func unwindFromRecommendationVC(unwindSegue: UIStoryboard){
-        
-        
-        
-    }
+  
+
    
 }

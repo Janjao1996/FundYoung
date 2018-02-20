@@ -20,7 +20,7 @@ class myPlansVC: UIViewController {
         firstNameLbl.text = user.FirstName
         lastNameLbl.text = user.LastName
     }
-
+   
     
 
 }

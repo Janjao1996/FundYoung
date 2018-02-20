@@ -14,7 +14,7 @@ class TextFieldStyle1: UITextField {
         super.awakeFromNib()
         backgroundColor = #colorLiteral(red: 0.9961728454, green: 0.9902502894, blue: 1, alpha: 0.7986943493)
         layer.cornerRadius = 5.0
-        layer.borderColor = #colorLiteral(red: 0.8374180198, green: 0.8374378085, blue: 0.8374271393, alpha: 1)
+        layer.borderColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
         layer.borderWidth = 0.5
         textAlignment = .center
         
