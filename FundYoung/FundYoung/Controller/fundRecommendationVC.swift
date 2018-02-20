@@ -29,22 +29,13 @@ class fundRecommendationVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func customBtnPressed(_ sender: Any) {
-        performSegue(withIdentifier: "CustomVC", sender: self)
+        performSegue(withIdentifier: "SelecttionVC", sender: self)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let customVC = segue.destination as? customPlanVC{
-            customVC.plan = plan
+        if let fundRecommendation = segue.destination as? fundSelectionVC{
+            
+            fundRecommendation.plan = plan
+            
         }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

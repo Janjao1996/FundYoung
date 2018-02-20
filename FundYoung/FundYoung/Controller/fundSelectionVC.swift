@@ -28,14 +28,23 @@ class fundSelectionVC: UIViewController, UITableViewDataSource, UITableViewDeleg
         
     }
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         FundTable.dataSource = self
         FundTable.delegate = self
 
         // Do any additional setup after loading the view.
+    }
+    @IBAction func BackBtnPressed(_ sender: Any) {
+        performSegue(withIdentifier: "CustomVC", sender: self)
+    }
+    var plan:Plan!
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let fundRecommendation = segue.destination as? fundRecommendationVC{
+            
+            fundRecommendation.plan = plan
+            
+        }
     }
 
    

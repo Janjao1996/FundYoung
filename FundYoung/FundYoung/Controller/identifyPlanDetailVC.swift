@@ -78,10 +78,12 @@ class identifyPlanDetailVC: UIViewController, UIPickerViewDelegate, UIPickerView
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let fundRecommendation = segue.destination as? fundRecommendationVC{
+            
             fundRecommendation.plan = plan
             
         }
     }
+    
   
 
    
