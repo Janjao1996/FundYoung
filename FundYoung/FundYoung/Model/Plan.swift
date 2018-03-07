@@ -13,5 +13,13 @@ struct Plan {
     var NumberOfYear: Int!
     var FundList = [Fund]()
     var Assesment = [Question]()
+    init(PlanName: String, Target : Int, NumberOfYear: Int) {
+        self.PlanName = PlanName
+        self.Target = Target
+        self.NumberOfYear = NumberOfYear
+    }
+    
     
 }
+
+
